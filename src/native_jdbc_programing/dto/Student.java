@@ -4,6 +4,7 @@ public class Student  implements Comparable<Student>{ //기본정렬을 학번�
 
 	private int stdNo; // 학번
 	private String stdname; // 성명
+	
 	private int kor;
 	private int eng;
 	private int math;

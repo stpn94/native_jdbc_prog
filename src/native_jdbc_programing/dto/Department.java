@@ -7,8 +7,6 @@ public class Department {
 	private String deptName;
 	private int floor;
 	private List<Employee> emplist;
-	
-
 	private Department() {
 
 	}

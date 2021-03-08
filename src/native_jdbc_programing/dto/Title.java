@@ -3,6 +3,7 @@ package native_jdbc_programing.dto;
 public class Title {
 	private int tno;
 	private String tname;
+	
 	public Title() {
 		// TODO Auto-generated constructor stub
 	}

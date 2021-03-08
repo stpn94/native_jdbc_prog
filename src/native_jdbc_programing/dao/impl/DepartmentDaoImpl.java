@@ -10,7 +10,6 @@ import java.util.List;
 import native_jdbc_programing.dao.DepartmentDao;
 import native_jdbc_programing.dto.Department;
 import native_jdbc_programing.dto.Employee;
-import native_jdbc_programing.dto.Title;
 import native_jdbc_programing.util.JdbcUtil;
 
 //-------------------------------------------------------------------------

@@ -47,7 +47,13 @@ delete
 from employee
 where empno = 1004;
 
+
 update title set tname ='계약직', where tno =6;
+
+UPDATE title INNER JOIN member_table B ON
+A.sp_uid=B.user_id
+SET B.level=7
+WHERE B.level=9 AND A.support_money > 10000
 
 
 -- 1번 부서에 소속된 사원

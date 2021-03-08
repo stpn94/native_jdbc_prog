@@ -15,8 +15,6 @@ import native_jdbc_programing.dto.Employee;
 public interface DepartmentDao {
 	List<Department> selectDepartmentByAll();
 	
-
-	
 	Department selectDepartmentByNo(Department department);
 	
 	int insertDepartment(Department department);

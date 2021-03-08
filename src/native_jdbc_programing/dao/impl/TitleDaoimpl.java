@@ -11,6 +11,7 @@ import native_jdbc_programing.dao.TitleDao;
 import native_jdbc_programing.dto.Title;
 import native_jdbc_programing.util.JdbcUtil;
 
+
 public class TitleDaoimpl implements TitleDao {
 	private static final TitleDaoimpl instance = new TitleDaoimpl();
 
@@ -52,8 +53,7 @@ public class TitleDaoimpl implements TitleDao {
 	@Override
 	public Title selectTitleByNo(Title title) {
 		String sql = "select tno,tname from title where tno = ?";
-		try (Connection con = JdbcUtil.getConnection(); 
-				PreparedStatement pstmt = con.prepareStatement(sql)) {
+		try (Connection con = JdbcUtil.getConnection(); PreparedStatement pstmt = con.prepareStatement(sql)) {
 			pstmt.setInt(1, title.gettNo());
 //				System.out.println(pstmt);
 			try (ResultSet rs = pstmt.executeQuery()) {

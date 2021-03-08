@@ -74,7 +74,7 @@ public class StudentDaoImpl implements StudentDao {
 
 	@Override
 	public int insertStudent(Student student) {
-		String sql = "insert into student values (?,?,?,?,?)";
+		String sql = "insert into student values (?,?,?,?,?);";
 		try (Connection con = JdbcUtil.getConnection(); 
 				PreparedStatement pstmt = con.prepareStatement(sql)) {
 			pstmt.setInt(1, student.getStdNo());

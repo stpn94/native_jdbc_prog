@@ -4,13 +4,8 @@ import java.util.List;
 
 import native_jdbc_programing.dto.Department;
 import native_jdbc_programing.dto.Employee;
-/*
- * C(insert)
- * R(select, select where)
- * U(update)
- * D(delete)
- */
 import native_jdbc_programing.dto.Title;
+
 // Data Access Object
 public interface EmployeeDao {
 	List<Employee> selectEmployeeByAll();

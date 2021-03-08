@@ -36,6 +36,7 @@ public class TitleDaoTest {
 
 	@Test
 	public void test05SelectTitleByNo() {
+		System.out.printf("%s()%n", "SelectTitleByNo");
 		Title title = new Title(3);
 		Title searchtitle = dao.selectTitleByNo(title);
 		Assert.assertNotNull(searchtitle);
@@ -44,7 +45,7 @@ public class TitleDaoTest {
 
 	@Test
 	public void test01InsertTilte() {
-		System.out.printf("%s()%n", "testSelectTitle");
+		System.out.printf("%s()%n", "testInsertTitle");
 		Title newTitle = new Title(6, "인턴");
 		int res = dao.insertTilte(newTitle);
 		Assert.assertEquals(1, res);
@@ -61,7 +62,7 @@ public class TitleDaoTest {
 
 	@Test
 	public void test02UpdateTitle() {
-		System.out.printf("%s()%n", "testSelectTitle");
+		System.out.printf("%s()%n", "testUpdateTitle");
 		Title newTitle = new Title(6, "계약직");
 		int res = dao.updateTitle(newTitle);
 		Assert.assertEquals(1, res);

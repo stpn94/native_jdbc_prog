@@ -54,17 +54,17 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		Department dept = new Department(rs.getInt("deptno"));
 
 		try {
-			title.settName(rs.getNString("title_name"));
+			title.settName(rs.getString("title_name"));
 		} catch (SQLException e) {
 		}
 
 		try {
-			manager.setEmpName(rs.getNString("manager_name"));
+			manager.setEmpName(rs.getString("manager_name"));
 		} catch (SQLException e) {
 		}
 
 		try {
-			dept.setDeptName(rs.getNString("deptname"));
+			dept.setDeptName(rs.getString("deptname"));
 		} catch (SQLException e) {
 		}
 
